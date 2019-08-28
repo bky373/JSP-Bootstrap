@@ -9,13 +9,13 @@ public class DatabaseUtil {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
-			System.err.println("!! JDBC Driver load ¿À·ù : " + e.getMessage());
+			System.err.println("!! JDBC Driver load Â¿Ã€Â·Ã¹ : " + e.getMessage());
 			e.printStackTrace();
 		}
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/LectureEvaluation?serverTimezone=UTC";
 			String dbID = "root";
-			String dbPassword = "qhfka102938!";
+			String dbPassword = "Enter your pasword";
 			return DriverManager.getConnection(dbURL, dbID, dbPassword);
 		} catch (Exception e) {
 			e.printStackTrace();
